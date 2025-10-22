@@ -29,5 +29,5 @@ class LinkedList:
             self.tail = new_node        
 
 
-LL = LinkedList(234)
+LL = LinkedList(24)
 print("my LL:",LL.head)
