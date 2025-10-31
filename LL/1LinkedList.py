@@ -10,6 +10,6 @@ class LinkedList:
         self.tail = new_node
         self.length = 1
 
-
+#
 my_LL = LinkedList(3)
 print("head:" ,my_LL.head.value)  
