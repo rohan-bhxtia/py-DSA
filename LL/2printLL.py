@@ -11,7 +11,6 @@ class LinkedList:
         self.length = 1
 
 
-    #########################################################
     def print(self):
         temp = self.head
         while temp is not None:
