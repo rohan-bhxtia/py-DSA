@@ -27,7 +27,11 @@ class LinkedList:
         else:
             self.tail.next = new_node
             self.tail = new_node        
-
+        self.length +=1
 
 LL = LinkedList(23)
-print("my LL:",LL.head.value)
+LL.append(47)
+LL.append(33)
+
+LL.print_list()
+         
