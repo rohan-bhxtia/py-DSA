@@ -30,4 +30,4 @@ class LinkedList:
 
 
 LL = LinkedList(23)
-print("my LL:",LL.head)##hwhfbeihjdc
+print("my LL:",LL.head.value)
