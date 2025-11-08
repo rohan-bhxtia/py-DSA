@@ -3,7 +3,7 @@ class node():
         self.value = value
         self.next =None
 
-class LinkedList():
+class Linkedlist():
     def __init__(self,value):
          new_node= node(value)
          self.head = new_node
@@ -11,7 +11,6 @@ class LinkedList():
          self.length =1
 
     def append(self,value):
-         self.value = value
          new_node =node(value)
          if self.head is None:
              self.head = new_node
@@ -22,20 +21,37 @@ class LinkedList():
              self.tail = new_node
          self.length +=1    
 
-    def pop(self,value):
+    def pop(self):
 
-        if self.head is None:
-            return False
-        elif self.head is self.tail:
+        if self.length == 0:
+            return None
+        if self.head is self.tail:
+            temp=self.head 
             self.head = None
             self.tail = None
-        else:
-            self.tail = None
-
-            
             self.length -=1
+        else:    
+         temp = self.head
+         pre = self.head
+         while temp.next :
+            pre = temp
+            temp = temp.next
+         self.tail = pre
+         self.tail.next = None
+         self.length -=1
+        
+
+        return temp
+    
+    def print(self):
+        temp = self.head
+        while temp is not None:
+            print("linkedlist: ",temp.value)
+            temp = temp.next
 
 
              
-
-
+ll = Linkedlist(23)
+ll.print()
+pop = ll.pop()
+print("popped : ",pop.value)
