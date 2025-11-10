@@ -24,7 +24,7 @@ class Linkedlist():
     def pop(self):
 
         if self.length == 0:
-            return None
+            print("linked List is already empty")
         if self.head is self.tail:
             temp=self.head 
             self.head = None
