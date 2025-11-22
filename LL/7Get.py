@@ -9,7 +9,7 @@ class linkedlist:
         self.head = new_node
         self.tail = new_node
         self.length =1
-##e
+##
     def append(self,value):
         new_node = Node(value)
         if self.head is None:
