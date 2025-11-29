@@ -22,7 +22,7 @@ class linkedlist:
             self.tail = new_node
         self.length += 1
 
-#
+#e
     def popFirst(self):
         if self.head is None:
             return None
